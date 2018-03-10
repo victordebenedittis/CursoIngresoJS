@@ -1,25 +1,11 @@
-// pedir precio y porcentaje de descuento 
 function Mostrar()
 {
-  var precio;
-  var procentaje;
-  var importefinal;
+  var importe;
+  var iva=1.21;
+  var importeFinal;
 
-  precio=prompt("ingrese precio");
-  descuento=prompt("ingrese su descuento");
+  importe=prompt("ingrese su importe");
 
-  descuento=(precio*descuento)/100;
-
-  importefinal=(precio-descuento);
-
- 
-	alert("el descuento es= " +descuento);
-  alert("su importe final es" +importefinal);
-
-   
-
-
-
-
-
+  importeFinal=importe*iva;
+  document.getElementById('importeFinal').value=importeFinal;
 }

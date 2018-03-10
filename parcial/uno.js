@@ -1,23 +1,13 @@
 
 function Mostrar()
-//altura prompt triangulo equilatero informar perimetro y superficie
 {
-	var altura;
+	var base;
 	var perimetro;
-	var superficie;
-	var laBase;
 
-	laBase=prompt("ingrese la altura aqui: ");
+	base=document.getElementById('laBase').value;
+	perimetro=base*4;
 
-	laBase=document.getElementById('laBase').value;
-	perimetro=document.getElementById('perimetro').value;
-	superficie=document.getElementById('superficie').value;
-
-	perimetro=laBase*3;
-	
-	alert("el perimetro es= " +perimetro);
+	alert("el perimetro es: "+perimetro);
 
 
-	
 }
-	
