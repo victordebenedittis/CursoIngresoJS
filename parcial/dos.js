@@ -1,11 +1,14 @@
 function Mostrar()
 {
-  var importe;
-  var iva=1.21;
-  var importeFinal;
+	  var importe;
+	  var iva=1.21;
+	  var importeIva;
 
-  importe=prompt("ingrese su importe");
+	  importe=prompt("ingrese su importe");
 
-  importeFinal=importe*iva;
-  document.getElementById('importeFinal').value=importeFinal;
+	  importeIva=importe*iva;
+
+	  document.getElementById('importeFinal').value=importeIva;
+
+
 }

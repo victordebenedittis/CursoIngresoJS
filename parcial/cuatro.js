@@ -1,30 +1,30 @@
 function Mostrar()
-/* ingresar dos numeros sin parsear 
-si son iguales concateno
-*/
 {
 	var numeroUno;
 	var numeroDos;
+	var respuesta;
 
-	numeroUno=prompt("ingrese primero numero");
-	numeroDos=prompt("ingrese segundo numero");
+	numeroUno=prompt("ingrese el primer numero");
+	numeroUno=parseInt(numeroUno);
+
+	numeroDos=prompt("ingrese el segundo numero");
+	numeroDos=parseInt(numeroDos);
 
 	if(numeroUno==numeroDos)
 	{
-		mensaje=numeroUno+numeroDos;
+		respuesta=numeroUno*numeroDos;
 	}
 	else
+	{
+		if(numeroUno>numeroDos)
 		{
-			if(numeroUno>numeroDos)
-			{
-				mensaje=numeroUno-numeroDos;
-			}
-
-			else
-			{
-				mensaje=numeroUno*numeroDos;
-			}
-
+			respuesta=numeroUno-numeroDos;
 		}
-	alert(mensaje);
+		else
+		{
+			respuesta=numeroUno+numeroDos;
+		}
+	}
+
+	document.write(respuesta);
 }
